@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+:root{
+    --color-purple-light: #8700ff;
+    --color-purple-normal: #6a1cb8;
+    --color-purpleblue-light: #6000ff;
+    --color-purpleblue-dark: #5800d6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: small;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.fundo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../IMG/FOTO/funlogin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #270125;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15 px rgba(0, 0, 0, 0.05);
+    font-family: "Bona nova" serif;
+    z-index: 1;
+    color: #fff;
+}
+
+.btn{
+    position: relative;
+    left: 10px;
+    top: 1px;
+    transition: o.5s ease-in-out;
+}
+
+.grupo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+header ul li a::before{
+
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-purpleblue-dark);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+
+}
+
+header ul li a:hover::before{
+
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+header .search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.searchbox{
+
+    position: absolute;
+    right: 55%;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.searchbox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 505;
+    font-size: 1.25em;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+h3{
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: space-around;
+    font-size: xx-large;
+}
+
+.tit{
+    position: absolute;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 85vh;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carousel-item{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img{    
+    width: 200px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 58px 10px 10px rgba(0,0,0);
+    -webkit-box-shadow: 0px 58px 0px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 58px 0px 0px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.carousel-text{
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
+    margin-top: 370px;
+}
+
+.txtpg{
+    text-decoration: none;
+    color: #fff;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    transition: 2s;
+}
+
+.txtpg:hover{
+    text-decoration: none;
+    color: var(--color-purpleblue-light);
+    font-weight: bolder;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    transition: 2s;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.titli{
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
+    margin-top: 315px;
+    font-style: italic;
+    font: bolder;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    gap: 10px;
+
+    > div{
+        flex: 0 0 200px;
+        border-radius: 0.5rem;
+        transition: 0.5 ease-in-out;
+        cursor: pointer;
+        box-shadow: 1px 5px 15px #1e0e3e;
+        position: relative;
+        overflow: hidden;
+
+        &:nth-of-type(1){
+            background: url(../IMG/FOTO/25desconto.png)
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(2){
+            background: url(../IMG/FOTO/cutus.png)
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(3){
+            background: url(../IMG/FOTO/10.png)
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(4){
+            background: url(../IMG/FOTO/cidade.png)
+            no-repeat 50% / cover;
+        }
+
+        .content{
+            font-family: "Ubuntu", monospace;
+            font-size: 1.5rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            opacity: 0;
+            flex-direction: column;
+            height: 100%;
+            justify-content: flex-end;
+            background: rgb(2, 2, 46);
+            background: linear-gradient(
+                0deg,
+                rgba(2, 2, 46, 0.6755077030812324) 0%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: translateY(100%);
+            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+            visibility: hidden;
+
+            span{
+                display: block;
+                margin-top: 5px;
+                font-size: 1.2rem;
+            }
+        }
+
+        &:hover{
+            flex: 0 0 400px;
+            box-shadow: 1px 3px 15px #7645d8;
+            transform: translateY(40px);
+        }
+
+        &:hover .content{
+            opacity: 1;
+            transform: translateY(0%);
+            visibility: visible;
+        }
+    }
+}

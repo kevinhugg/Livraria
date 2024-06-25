@@ -1,0 +1,35 @@
+[
+    {
+        "email": "kevinmartins07@outlook.com",
+        "user": "Pig",
+        "idade": "18",
+        "cep": "06608000",
+        "logradouro": "Rua Rita do Nascimento Duca",
+        "bairro": "Jardim Belmont",
+        "localidade": "Jandira",
+        "uf": "SP",
+        "senha": "12ahjhaufaoin"
+    },
+    {
+        "email": "carloaugusto@gmail.com",
+        "user": "carlao",
+        "idade": "19",
+        "cep": "06695480",
+        "logradouro": "Rua Em\u00edlio Lehmann",
+        "bairro": "Est\u00e2ncia S\u00e3o Francisco",
+        "localidade": "Itapevi",
+        "uf": "SP",
+        "senha": "'187gfjkn"
+    },
+    {
+        "email": "kevotoddynho@gmail.com",
+        "user": "kevotoddynho",
+        "idade": "16",
+        "cep": "06608000",
+        "logradouro": "Rua Rita do Nascimento Duca",
+        "bairro": "Jardim Belmont",
+        "localidade": "Jandira",
+        "uf": "SP",
+        "senha": "123afatetcd"
+    }
+]

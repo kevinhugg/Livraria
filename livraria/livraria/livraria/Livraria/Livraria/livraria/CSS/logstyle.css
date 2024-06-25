@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-purple-light: #8700ff;
+    --color-purple-normal: #6a1cb8;
+    --color-purpleblue-light: #6000ff;
+    --color-purpleblue-dark: #5800d6;
+    --fundo-login: #9D79BC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: small;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #270125;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+    font-family: "Bona nova" serif;
+    z-index: 1;
+    color: #fff;
+}
+
+.book{
+    margin-top: -15px;
+}
+
+.book a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fundo{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.fundo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card{
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--fundo-login);
+    border-radius: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 40) 50px 45px 30px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-2{
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--fundo-login);
+    border-radius: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 40) 50px 45px 30px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-3{
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--fundo-login);
+    border-radius: 5%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 40) 50px 45px 30px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#senha,
+#usuario,
+#email,
+#idade{
+    display: flex;
+    flex-direction: column;
+}
+
+#can{
+    width: 70px;
+    height: 70px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+.adiciona{
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+.bota{
+    display: flex;
+    background-color: #0613c7;
+    width: 100%;
+}
+
+a{
+    margin-left: 20%;
+}
+
+.link{
+    margin-left: 5%;
+}
+
+.link-2{
+    margin-left: 30%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    background-color: var(--color-purple-normal);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    transition: 2s;
+}
+
+button:hover{
+    background-color: #270125;
+}
+
+.venda{
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+}
+
+.produto-lista {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 30%;
+}
+
+.produto-lista h2{
+    color: #fff;
+}
+
+.produto-item {
+    border: 1px solid purple;
+    padding: 5px;
+    margin: 5px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    font-size: 0.9em; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.produto-item div{
+    margin-bottom: 5px;
+}
+
+.produto-item .actions{
+    display: flex;
+    gap: 10px;
+}
+
+.edit .delete{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+    background-color: #4CAF50;
+    color: white;
+}
